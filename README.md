@@ -1,31 +1,56 @@
-# Prediction Model (Machine Learning)
+# Student Result Prediction Model (Machine Learning)
 
-This repository contains my Machine Learning practice projects.
-I am learning ML step by step using Python and scikit-learn.
+This project is a simple **Supervised Machine Learning model** that predicts whether a student will **Pass or Fail**
+based on their study-related information.
 
-## 📂 Project Type
+The model is built using **Logistic Regression** and implemented in **Python** with the help of **scikit-learn**.
+
+---
+
+## 📊 Dataset Description
+
+The dataset is created manually inside the code and includes the following features:
+
+- **age** → Student age
+- **studying** → Number of hours spent studying
+- **gender** → Male / Female (encoded using LabelEncoder)
+- **marks** → Student marks
+- **result** → Pass or Fail (Target variable)
+
+---
+
+## 🧠 Machine Learning Concepts Used
+
 - Supervised Learning
-- Unsupervised Learning
-
-## 🧠 Topics Covered
-- Data preprocessing
-- Label Encoding
-- Standard Scaling
 - Logistic Regression
-- KMeans Clustering
+- Label Encoding
+- Train-Test Split
+- Model Accuracy Evaluation
 
-## 🛠️ Tools & Libraries
+---
+
+## 🛠️ Libraries Used
+
 - Python
 - Pandas
-- NumPy
 - scikit-learn
 
-## 📁 Files
-- sl3.py → Unsupervised learning practice code
+---
 
-## 🎯 Goal
-To learn Machine Learning fundamentals and build projects for practice and future opportunities.
+## ⚙️ How the Model Works
 
-## 🙋 Author
-Hemchand Kumar  
-Learning Machine Learning 🚀
+1. Student data is converted into a Pandas DataFrame  
+2. Categorical data (gender and result) is encoded using `LabelEncoder`  
+3. Features and target variables are separated  
+4. Data is split into training and testing sets  
+5. Logistic Regression model is trained  
+6. Model accuracy is calculated  
+7. User inputs are taken to predict Pass or Fail result  
+
+---
+
+## ▶️ How to Run the Code
+
+1. Install required libraries:
+   ```bash
+   pip install pandas scikit-learn
